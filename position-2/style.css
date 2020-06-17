@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -0.02em;
+  }
+  
+  h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1f2d3d;
+    line-height: 1.4545454545;
+  }
+  
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7d858f;
+    line-height: 1.5;
+  }
+  
+  strong {
+    font-size: 22px;
+    color: #2860e1;
+    line-height: 1.0909090909;
+  }
+  
+  strong span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #525d69;
+    line-height: 1.5;
+  }
+  
+  button {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+  }
+  
+  #prev {
+    background-image: url(./assets/icon-backward.svg);
+  }
+  
+  #next {
+    background-image: url(./assets/icon-forward.svg);
+  }
+  
+  .card{
+      width:400px
+  }
+  .card::after{
+      content:'';
+      display: block;
+      clear:top;
+  }
+  .card-carousel{
+      float:top;
+      position: relative;
+  }
+  .card-carousel img{
+      width:400px;
+  }
+  #prev{
+      position: absolute;
+      left:0px;
+      top:138px;
+  }
+  #next{
+      position: absolute;
+      right: 0px;
+      top:138px;
+  }
+  .card-content{
+      float:top;
+      position: relative;
+  }
+  .card-content h1{
+      position: absolute;
+      top:12px;
+      left:16px;
+  }
+  .card-content span{
+      position: absolute;
+      top:46px;
+      left:16px;
+  }
+  .card-content strong span{
+      position: absolute;
+      top:78px;
+      left:249px;
+  }
+  .card-content strong{
+      position: absolute;
+      top:78px;
+      left:287px;
+  }
+  /* ▼ WHERE YOUR CODE BEGINS */
