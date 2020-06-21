@@ -45,7 +45,6 @@
       border-radius: 16px;
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
       align-items: center;
       padding: 32px 40px;
   }
@@ -63,13 +62,10 @@
     margin-bottom: 32px;
   }
 
-  .profile-detail-item{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-  }
+
   .profile-detail{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-align: center;
   }
