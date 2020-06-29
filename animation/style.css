@@ -1,0 +1,66 @@
+  
+/* ▼ WHERE YOUR CODE BEGINS */
+
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 216px;
+    background-color: #fff;
+}
+
+.loading-title{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height:1.333333;
+    margin-bottom: 20px;
+}
+
+.progress-bar{
+    background: #E5EAEF;
+    position: relative;
+    width: 300px;
+    height: 12px;
+    border-radius: 100px;
+}
+.progress-bar-gauge{
+    position: absolute;
+    left:0;
+    width:0;
+    animation: loading;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loading{
+    from{
+        left:0;
+        width: 0;
+        height: 12px;
+        background-color: #E5EAEF;
+    }
+    to{
+        
+        width: 300px;
+        height: 12px;
+        background-color: #13CE66;
+        border-radius: 30px;
+    }
+}
