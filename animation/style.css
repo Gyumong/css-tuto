@@ -31,7 +31,7 @@ body{
     line-height:1.333333;
     margin-bottom: 20px;
     animation: font;
-    animation-duration: 3s;
+    animation-duration: 1600ms;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
@@ -45,34 +45,38 @@ body{
 }
 .progress-bar-gauge{
     position: absolute;
+    top:0;
     left:0;
     width:0;
+    height: 12px;
+    background-color: #13CE66;
+    border-radius: 100px;
     animation: loading;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
 }
 
 @keyframes loading{
-    from{
-        left:0;
-        width: 0;
-        height: 12px;
-        background-color: #E5EAEF;
+    0%{
+        width:0;
+        opacity: 1;
     }
-    to{
-        
-        width: 300px;
-        height: 12px;
-        background-color: #13CE66;
-        border-radius: 30px;
+    80%{
+        width: 100%;
+        opacity: 1;
+    }
+    100%{        
+        width: 100%;
+        opacity: 0;
     }
 }
 
 @keyframes font{
     from{
-        color:#fff;
+        opacity: 0;
     }
     to{
-        color: #151B26;
+        opacity: 1;
     }
 }
