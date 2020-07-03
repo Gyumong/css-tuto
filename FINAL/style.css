@@ -35,7 +35,7 @@ li{
 }
 p{
     font-size: 16px;
-    line-height: 1.375;
+    line-height: 1.5;
     font-weight: 400;
     color:#2B292D;
     letter-spacing: -0.01em;
@@ -94,6 +94,83 @@ p{
 .landing .button-grop .fill-button:first-child{
     margin-right: 8px;
 }
+
+/* Service */
+.service{
+    background: #F4F5F7;
+    padding:80px 0;
+}
+.service-title{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.3636363;
+    letter-spacing: -0.04em;
+    color: #2B292D;
+    margin-bottom: 16px;
+}
+.service-desc{
+    line-height: 1.5;
+    color: #2B292D
+}
+.service .col-12:first-child{
+    margin-bottom: 40px;
+}
+
+/* Program */
+
+.program{
+    padding:80px 0;
+    background: #FFFFFF;
+}
+.category{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #009B4D;
+    margin-bottom: 8px;
+}
+.program-title{
+    font-size: 34px;
+    line-height: 1.058823529;
+    letter-spacing: -0.03em;
+    color: #2B292D;
+    margin-bottom: 24px;
+}
+.program-desc{
+    margin-bottom: 32px;
+}
+
+.program-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:290px;
+    height: 290px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 
+    0px 1px 3px rgba(0, 0, 0, 0.1), 
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+}
+.program-image{
+    width:140px;
+    height: 195px;
+    background: url(./assets/img-fulltime-campus.png);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 16px;
+}
+.programs-title{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.333333;
+    letter-spacing: -0.02em;
+    color: #2B292D;
+}
+
 /* >768px (Desktop) */
 @media screen and (min-width:768px){
     p{
@@ -124,6 +201,37 @@ p{
     }
     .landing .button-grop .fill-button:first-child{
         margin-right: 16px;
+    }
+
+    /* Service */
+    .service-title{
+        font-size: 26px;
+        line-height: 1.30769230;
+    }
+    .service-desc{
+        line-height: 1.45454545;
+    }
+    .service .col-12:first-child{
+        margin-bottom: 0;
+    }
+
+    /* Program */
+
+    .program .col-12:first-child{
+        text-align: center;
+    }
+    .program .category{
+        font-size: 22px;
+        line-height: 1.09090909;
+        margin-bottom: 16px;
+    }
+    .program-title{
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: 32px;
+    }
+    .program-desc{
+        margin-bottom: 72px;
     }
 }
 
