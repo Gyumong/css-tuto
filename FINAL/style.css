@@ -218,53 +218,64 @@ p{
 
 /* Subscription */
 .subscription{
+    text-align: center;
     padding:40px 0;
     background: #F2F8FA;
 }
 
-.subscription img{
-    width:290px;
-    height: auto;
-    margin-bottom: 16px;
+.subscription-image{
+    padding:25px 0;
+}
+
+.subscription-image img{
+    display: block;
+    width:auto;
+    height: 190px;
+    margin:0 auto;
 }
 
 .subscription-title{
     font-size: 32px;
     line-height: 1;
-    text-align: center;
+    color: #2B292D;
     letter-spacing: -0.05em;
     margin-bottom: 16px;
 }
 
 .subscription-desc{
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: -0.01em;
-    color: #2B292D;
     margin-bottom: 24px;
 }
 
-.subscription form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
+.subscription .input-group{
+    margin-bottom: 8px;
 }
-.subscription input{
+.subscription .input-group input{
     width:100%;
     height: 48px;
-    font-size: 16px;
-    line-height: 1.5px;
     border:none;
     outline: none;
-    color: #7B7B7E;
-    padding:12px 16px 12px;
+    padding:0 16px;
+    border-radius: 2px;
     margin-bottom: 8px;
-    letter-spacing: -0.01em;
 }
-.subscription .fill-button{
+.subscription .input-group .fill-button{
     width:100%;
-    height: 48px;
+    border: none;
+    outline: none;
+}
+
+.subscription-form .form-notice{
+    font-size: 13px;
+    line-height: 1.538461538;
+    letter-spacing: 0;
+    color:#7b7b7e;
+}
+
+.subscription-form .form-notice a{
+    color: #3040C4;
+    text-decoration: underline;
 }
 /* >768px (Desktop) */
 @media screen and (min-width:768px){
@@ -362,37 +373,41 @@ p{
         height: auto;
     }
     /* Subscription */
-
+    .subscription{
+        padding:80px 0;
+        text-align: left;
+    }
+    .subscription-image{
+        padding:8px 0;
+    }
+    .subscription-image img{
+        height: 285px;
+        margin-left: 0;
+    }
     .subscription-title{
         font-size: 40px;
-        line-height: 1;
-        letter-spacing: -0.05em;
-        margin-bottom: 16px;
     }
 
-    .subscription-desc{
-        font-size: 22px;
-        line-height: 1.45454545;
-        letter-spacing: -0.01em;
-        margin-bottom: 24px;
+    .subscription .input-group{
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
     }
-
-    .subscription form{
-        flex-direction: row;
-    }
-
-    .subscription input{
-        padding:16px 16px 16px;
+    .subscription .input-group input{
+        height: 56px;
         font-size: 18px;
         line-height: 1.3333333;
         margin-bottom: 0;
         margin-right: 8px;
     }
-    .subscription .fill-button{
+    .subscription .input-group .fill-button{
         width: 160px;
-        
+        flex-shrink: 0;
     }
-
+    .subscription-form .form-notice{
+        font-size: 14px;
+        line-height: 1.714285;
+    }
 }
 
 /*Custom Grid System - Fix container Max Width*/
